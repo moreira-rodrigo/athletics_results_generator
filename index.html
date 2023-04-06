@@ -1,14 +1,37 @@
 <html>
     <head>
+
+      <title>"Athletics Results Generator"</title>
+
       <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+      <link rel='stylesheet' type='text/css' media='screen' href='https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css'>
       <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     </head>
 
   <body>
-    <h1>Athletics Results Generator</h1>
-    <div id="plot"></div>
+
+      <h1>Athletics Results Generator</h1>
+      
+      
+      <br>
+      
+      <p>Input Text</p>
+      
+      <textarea name="input_text" id="input_text" placeholder="Enter your text...."></textarea>
+      
+      <br>
+      
+      <button id="run" type="button" class="button is-primary" pys-onClick="count">Count</button>
+      <button id="clear" type="button" class="button is-danger" pys-onClick="clear">Clear</button>
+      
+      <p>Output from 🐍</p>
+      
+      <p id = 'output'></p>
+          
+  </body>
+
     <py-config type="toml">
-        packages = ["pandas", "ExtractTable"]
+        packages = ["pandas", "ExtractTable","IPython"]
         [[fetch]]
         files = ["./app.py","./globals.py","src/setting_output.py","src/extract_table.py","./pk_df_5.pkl","./pk_df.pkl"]
     </py-config>
@@ -17,5 +40,5 @@
     from app import main_pipeline
     main_pipeline()
   </py-script>
-</body>
+
 </html>

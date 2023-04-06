@@ -2,6 +2,7 @@ from src.setting_output import SettingOutputData
 from src.extract_table import ExtractTableFromImage
 from globals import EXTRACT_TABLE_APIKEY
 import pandas as pd
+from IPython.display import HTML
 
 
 
@@ -24,7 +25,8 @@ def main_pipeline():
     #df = et_client.image_to_df("image_files/image_test_5.jpg")
     #df.to_pickle("pk_df_5.pkl")  
     df = pd.read_pickle("pk_df.pkl")
-    workflow = SettingOutputData(df)
+    HTML(df.to_html(classes='table table-stripped'))
+    """workflow = SettingOutputData(df)
     print("Resultados escaneados:")
     df = workflow.replace_header_by_first_row()
     print(df)
@@ -36,7 +38,7 @@ def main_pipeline():
     df = workflow.classification_by_event_type()
     df = workflow.transform_data_to_user_request()
     #AINDA PRECISA ADICIONAR COLUNAS OPCIONAIS, COMO A PONTUACAO
-    print(df)
+    print(df)"""
     return 0
 
 #main_pipeline()
