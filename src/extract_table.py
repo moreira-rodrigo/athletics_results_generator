@@ -1,6 +1,5 @@
 from ExtractTable import ExtractTable
 import pandas as pd
-import numpy as np
 
 class ExtractTableFromImage:
     

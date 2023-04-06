@@ -1,5 +1,5 @@
-from setting_output import SettingOutputData
-from extract_table import ExtractTableFromImage
+from src.setting_output import SettingOutputData
+from src.extract_table import ExtractTableFromImage
 from globals import EXTRACT_TABLE_APIKEY
 import pandas as pd
 

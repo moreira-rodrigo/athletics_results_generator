@@ -8,8 +8,9 @@
     <h1>Athletics Results Generator</h1>
     <div id="plot"></div>
     <py-config type="toml">
+        packages = ["pandas", "ExtractTable"]
         [[fetch]]
-        files = ["./app.py"]
+        files = ["./app.py","src.setting_output.py","src.extract_table.py"]
     </py-config>
   <py-script>
     print("Iniciate import")
