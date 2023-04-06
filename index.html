@@ -5,14 +5,14 @@
     </head>
 
   <body>
-    <h1>Let's plot random numbers</h1>
+    <h1>Athletics Results Generator</h1>
     <div id="plot"></div>
     <py-config type="toml">
         [[fetch]]
         files = ["./app.py"]
     </py-config>
   <py-script>
-    print("cheguei aqui")
+    print("Iniciating import")
     from app import main_pipeline
     main_pipeline()
   </py-script>
