@@ -1,0 +1,20 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+      <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    </head>
+
+  <body>
+    <h1>Let's plot random numbers</h1>
+    <div id="plot"></div>
+    <py-config type="toml">
+        [[fetch]]
+        files = ["./app.py"]
+    </py-config>
+  <py-script>
+    print("cheguei aqui")
+    from app import main_pipeline
+    main_pipeline()
+  </py-script>
+</body>
+</html>
