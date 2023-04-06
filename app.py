@@ -1,4 +1,4 @@
-from src.setting_output import SettingOutputData
+import src.setting_output.SettingOutputData as SettingOutputData
 from src.extract_table import ExtractTableFromImage
 from src.clean_df import CleanDf
 from globals import EXTRACT_TABLE_APIKEY
