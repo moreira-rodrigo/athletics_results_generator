@@ -1,4 +1,46 @@
+
 body {
-    background-image: url("https://scontent.fgru4-1.fna.fbcdn.net/v/t39.30808-6/300364928_367822292213234_6172238912556948672_n.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=xKCShWcnOjgAX-L4Med&_nc_ht=scontent.fgru4-1.fna&oh=00_AfAXJuCtGWUD5WuMQgyF-swl1GpcVFziHSRHRtn0f522Tw&oe=643A071A");
+    font-family: Times new Roman;
+    text-align: center;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
     background-size: 1400px 700px;
+    background-image: url("https://drive.google.com/file/d/1JNtMhmKVbjW_ptGUXfXt1R1FgpjwzcHm/view");
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1PX solid #000;
+    align-items: right;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: right;
+}
+
+
+ul li {
+    margin-left: 12px;
+}
+
+ul li a {
+    color: #004;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+footer {
+    padding: 20px;
+    border-top: 1px solid #666;
+    margin-top: 20px;
+}
+#page_header {
+    background-color: #666;
+    align-items: right;
 }
