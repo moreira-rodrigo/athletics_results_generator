@@ -21,10 +21,10 @@
       
       <br>
       
-      <button id="run" type="button" class="button is-primary" pys-onClick="count">Count</button>
+      <button id="run" type="button" class="button is-primary" pys-onClick="test_function">Count</button>
       <button id="clear" type="button" class="button is-danger" pys-onClick="clear">Clear</button>
       
-      <p>Output from 🐍</p>
+      <p>Output from </p>
       
       <p id = 'output'></p>
           
@@ -36,9 +36,9 @@
         files = ["./app.py","./globals.py","src/setting_output.py","src/extract_table.py","./pk_df_5.pkl","./pk_df.pkl"]
     </py-config>
   <py-script>
-    print("Iniciate import")
-    from app import main_pipeline
-    main_pipeline()
+    def test_function():
+    print("Chamou a funcao")
+
   </py-script>
 
 </html>
