@@ -11,7 +11,7 @@
 </head>
 <body>
     <input type="text" id="test-input" placeholder="Digite o nome da competição no padrão NOME_COMPETICAO_DATA_INICIO. ex: TUNA_2023_04_10"/>
-    <button id="run" type="button" class="button is-primary" py-click="generate_event()">Funcao</button>
+    <button id="run" type="button" class="button is-primary" py-click="generate_event()">Criar Competição</button>
 </body>
 
 <py-config type="toml">
@@ -22,7 +22,7 @@
 <py-script>
 from utils import generate_event
 
-generate_event(Element(test-input))
+generate_event(Element("test-input"))
 
 </py-script>
 
