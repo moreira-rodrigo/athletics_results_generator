@@ -21,7 +21,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 5px;
-    border-bottom: 1PX solid #314634;
+    border-bottom: 1PX solid #02ddcb;
     align-items: right;
 }
 nav ul {
