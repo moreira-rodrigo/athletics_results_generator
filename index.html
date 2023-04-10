@@ -1,50 +1,13 @@
-<html>
-    <head>
-
-      <title>dev Athletics Results Generator</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbitragem JP Sports Resultados</title>
+    <link rel="stylesheet" href="index_styles.css">
+</head>
+<body>
     
-      <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-      <link rel='stylesheet' type='text/css' media='screen' href='https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css'>
-      <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-    </head>
-
-  <body>
-
-      <h1>Athletics Results Generator</h1>
-      
-      <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijDobnLbqByeVWIcEvJGT7AlLDQzdu11p8g&usqp=CAU" alt="imagem atletismo pista">
-        <a href="www.google.com">Ir para uma pagina qualquer</a>
-      
-      </div>
-
-      <div>
-      <br>
-      
-      <p>Input Text</p>
-      
-      <textarea name="input_text" id="input_text" placeholder="Enter your text...."></textarea>
-      
-      <br>
-      
-      <button id="run" type="button" class="button is-primary" py-click="test_function()">Funcao</button>
-      <button id="clear" type="button" class="button is-danger" py-click="clear">Nada</button>
-      
-      
-      <p id = 'output'></p>
-    </div>
-          
-  </body>
-
-    <py-config type="toml">
-        packages = ["pandas", "ExtractTable","IPython"]
-        [[fetch]]
-        files = ["./app.py","./globals.py","src/setting_output.py","src/extract_table.py","./pk_df_5.pkl","./pk_df.pkl"]
-    </py-config>
-  <py-script>
-    def test_function():
-      pyscript.write("run","Teste de um retorno")
-
-  </py-script>
-
+</body>
 </html>
