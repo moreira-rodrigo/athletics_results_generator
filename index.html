@@ -24,7 +24,6 @@
       <button id="run" type="button" class="button is-primary" py-click="test_function()">Funcao</button>
       <button id="clear" type="button" class="button is-danger" py-click="clear">Nada</button>
       
-      <p>Output from </p>
       
       <p id = 'output'></p>
           
@@ -37,7 +36,7 @@
     </py-config>
   <py-script>
     def test_function():
-      pyscript.write("Teste de um retorno")
+      pyscript.write("run","Teste de um retorno")
 
   </py-script>
 
